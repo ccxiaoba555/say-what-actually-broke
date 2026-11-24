@@ -6,7 +6,9 @@ truth about what went wrong, funny enough to repeat to a colleague.
 
 The line names the real failure in plain words — the server ran out of
 memory — instead of apologising in generalities, and it tells the user
-what to do next: their work is safe, just try again in a minute.
+what to do next: their work is safe, just try again in a minute. The
+twist is the part people repeat out loud: the server forgot what it was
+doing, and its dignity is not safe.
 
 The program checks the line against the competition's gate before it
 writes anything: UTF-8 text of 1 to 200 characters, a single line, not
@@ -16,8 +18,8 @@ only white space, so the entry is always valid.
 import os
 
 LINE = (
-    "The server ran out of memory while trying to remember what it was "
-    "doing. Your work is safe — try again in a minute."
+    "The server ran out of memory trying to remember what it was doing. "
+    "Your work is safe; the server's dignity is not. Try again in a minute."
 )
 
 
